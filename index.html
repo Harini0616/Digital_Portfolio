@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harini Jaikumar | Digital Portfolio </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root { --grab-green: #00b14f; --grab-dark: #008c3e; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f4f7f6; color: #333; padding-bottom: 50px; scroll-behavior: smooth; }
+        
+        /* Navigation Buttons */
+        .nav-container { background: white; padding: 15px 0; position: sticky; top: 0; z-index: 1000; border-bottom: 2px solid #eee; }
+        .btn-nav { background: var(--grab-green); color: white; border-radius: 20px; padding: 8px 20px; border: none; font-weight: 600; text-decoration: none; margin: 0 5px; transition: 0.3s; display: inline-block; }
+        .btn-nav:hover { background: var(--grab-dark); color: white; transform: translateY(-2px); }
+
+        /* Hero Section */
+        .hero { background: var(--grab-green); color: white; padding: 50px 0; text-align: center; border-bottom: 5px solid var(--grab-dark); }
+        .btn-resume { 
+            background-color: white; color: var(--grab-green); 
+            font-weight: bold; border: 2px solid white; 
+            padding: 12px 30px; border-radius: 50px; text-decoration: none;
+            display: inline-block; margin-top: 20px; transition: 0.3s;
+        }
+        .btn-resume:hover { background-color: var(--grab-dark); color: white; }
+
+        /* Full-Width Section Boxes (Strictly Vertical) */
+        .section-box { 
+            background: white; 
+            border-radius: 15px; 
+            padding: 35px; 
+            margin-top: 40px; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+        }
+        
+        .section-title { color: var(--grab-green); font-weight: 700; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+        
+        /* Clickable Images */
+        .img-link { cursor: pointer; display: block; margin: 25px auto; max-width: 850px; }
+        .project-img { width: 100%; border-radius: 10px; border: 1px solid #ddd; transition: 0.3s; }
+        .project-img:hover { opacity: 0.8; transform: scale(1.01); }
+
+        /* Skills - Simple text list */
+        .skills-text { font-size: 1.15rem; font-weight: 500; color: #444; line-height: 2.5; }
+        blockquote { border-left: 5px solid var(--grab-green); padding-left: 20px; font-style: italic; color: #666; margin: 25px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container text-center shadow-sm">
+        <a href="#about" class="btn-nav">About Me</a>
+        <a href="#projects" class="btn-nav">Projects</a>
+        <a href="#skills" class="btn-nav">Technical Skills</a>
+    </div>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-white">Harini Jaikumar</h1>
+            <p class="lead">NYP Business & Financial Technology</p>
+            <a href="Resume.pdf" download class="btn-resume shadow-sm">Download Resume (PDF)</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <section id="about" class="section-box">
+            <h2 class="section-title">Profile</h2>
+            <p>I am a motivated developer from Nanyang Polytechnic specializing in front-end web development and user-experience design. I have a strong foundation in building responsive, user-friendly platforms that bridge community gaps. I am eager to apply my technical skills to drive innovation at <strong>Grab</strong>.</p>
+        </section>
+
+        <div id="projects">
+            <section class="section-box">
+                <h2 class="section-title">Project: Intergen Connect</h2>
+                <p>I designed and developed the "Stories" section to allow users to share intergenerational stories. I integrated an AI-powered chatbot using the Claude API to enhance engagement. Backend logic was implemented using Python (Flask) and SQLite.</p>
+                
+                <a href="Screenshot 2026-02-14 133727.png" target="_blank" class="img-link">
+                    <img src="Screenshot 2026-02-14 133727.png" class="project-img" alt="Intergen Connect Screenshot">
+                </a>
+            </section>
+
+            <section class="section-box">
+                <h2 class="section-title">Project: Silat CCA Website</h2>
+                <p>I developed the "Our Activities" and "Our Team" modules using HTML, CSS, and Bootstrap. I focused on structuring content for cross-device compatibility and creating a professional digital identity for the CCA.</p>
+                <a href="Screenshot 2026-02-14 160747.png" target="_blank" class="img-link">
+                    <img src="Screenshot 2026-02-14 160747.png" class="project-img" alt="Silat Project Screenshot">
+                </a>
+            </section>
+        </div>
+
+        <section id="skills" class="section-box">
+            <h2 class="section-title">Technical Expertise</h2>
+            <p class="skills-text text-center">
+                HTML5 & CSS3 • JavaScript (ES6+) • Python (Flask) • Bootstrap 5 • SQLAlchemy & SQLite • UI/UX Design
+            </p>
+        </section>
+
+    </div>
+
+    <footer class="bg-dark text-white py-4 text-center mt-5">
+        <p class="mb-0">Contact: Harinijaikumar6@gmail.com</p>
+        <p class="small text-secondary">&copy; 2028 | Digital Portfolio for Grab Holdings Inc.</p>
+    </footer>
+
+</body>
+</html>
